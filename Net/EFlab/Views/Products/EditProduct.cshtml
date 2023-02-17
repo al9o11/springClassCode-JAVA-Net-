@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "EditProduct";
+}
+
+<h2>Edit Product</h2>
+
+<form action="" method="post">
+
+    Name:<input type="text" class="form-control"value="@(Model ==null ? "":Model.Name)" name="name" />
+    Price:<input type="number" class="form-control" value="@(Model ==null ? "":Model.Price)"  name="price" />
+    Quantity:<input type="number" class="form-control" value="@(Model ==null ? "":Model.QTy)" name="qty" />
+    <input type="submit" class="alert-success" />
+
+</form>
+
