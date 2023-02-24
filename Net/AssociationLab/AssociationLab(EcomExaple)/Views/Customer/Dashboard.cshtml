@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+
+}
+@{ 
+    if (Session["Name"] == null)
+    {
+        Response.Redirect("/Home/Index");
+    }
+}
+
+<h1 class="page-header text-center">Welcome Bake @Session["name"]!</h1>
+<a class="btn btn-danger" href="/Home/Index">LogOut</a>
+
+

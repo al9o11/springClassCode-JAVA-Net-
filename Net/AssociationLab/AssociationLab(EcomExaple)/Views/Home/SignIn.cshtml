@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "SignIn";
+}
+<h3 class="text-center alert-danger">@TempData["msg"]</h3>
+
+<h1 class="page-header text-center">Sign In</h1>
+<a class="btn btn-default" href="/Home/Index">Back</a><br /><br />
+<div class="center-block">
+    <form action="" method="post">
+        Name:<input type="text" class="form-control" value="@(Model ==null ? "":Model.Name)" name="Name" />
+        Password:<input type="password" class="form-control" value="@(Model ==null ? "":Model.Password)" name="Password" />
+        <input type="submit" class="alert-success" />
+    </form>
+</div>
+

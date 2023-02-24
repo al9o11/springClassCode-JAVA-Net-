@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<h1 class="page-header text-center">Sign Up</h1>
+<a class="btn btn-default" href="/Home/Index">Back</a><br /><br />
+<div class="center-block">
+    <form action="" method="post">
+        Name:<input type="text" class="form-control" value="@(Model ==null ? "":Model.Name)" name="Name" />
+        Email:<input type="text" class="form-control" value="@(Model ==null ? "":Model.Email)" name="Email" />
+        Phone:<input type="text" class="form-control" value="@(Model ==null ? "":Model.Phone)" name="Phone" />
+        Password:<input type="password" class="form-control" value="@(Model ==null ? "":Model.Password)" name="Password" />
+        <input type="submit" class="alert-success" />
+    </form>
+</div>
+
